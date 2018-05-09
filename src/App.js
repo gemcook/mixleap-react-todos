@@ -65,7 +65,7 @@ class App extends Component {
           <Button
             size="small"
             className="delete-all"
-            color="red"
+            color="green"
             disabled={this.state.todos.length === 0}
             onClick={() => {
               const todos = this.state.todos.filter(todo => {
