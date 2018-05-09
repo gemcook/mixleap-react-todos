@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="a__todos">
         <div className="b__title">
-          <h1>Todos</h1>
+          <h1>Mix Leap React Todos</h1>
         </div>
         <div className="b__add-input">
           <Input
