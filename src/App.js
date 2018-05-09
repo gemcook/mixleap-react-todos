@@ -64,8 +64,52 @@ class App extends Component {
           />
           <Button
             size="small"
-            className="delete-all"
+            className="done-all"
             color="green"
+            disabled={this.state.todos.length === 0}
+            onClick={() => {
+              const todos = this.state.todos.map(todo => {
+                todo.done = true;
+                return todo;
+              });
+
+              // ローカルストレージに保存
+              storage.set("todos", todos);
+
+              // Stateに保存
+              this.setState({
+                todos
+              });
+            }}
+          >
+            一括で完了
+          </Button>
+          <Button
+            size="small"
+            className="not-done-all"
+            color="green"
+            disabled={this.state.todos.length === 0}
+            onClick={() => {
+              const todos = this.state.todos.map(todo => {
+                todo.done = false;
+                return todo;
+              });
+
+              // ローカルストレージに保存
+              storage.set("todos", todos);
+
+              // Stateに保存
+              this.setState({
+                todos
+              });
+            }}
+          >
+            一括で未完了
+          </Button>
+          <Button
+            size="small"
+            className="delete-all"
+            color="red"
             disabled={this.state.todos.length === 0}
             onClick={() => {
               const todos = this.state.todos.filter(todo => {
@@ -81,7 +125,7 @@ class App extends Component {
               });
             }}
           >
-            完了を一括削除
+            完了を一括で削除
           </Button>
         </div>
         <div className="b__main">

@@ -13,8 +13,16 @@
   width: 300px;
 }
 
-.b__add-input .delete-all {
+.b__add-input .done-all {
   margin-left: 20px;
+}
+
+.b__add-input .not-done-all {
+  margin-left: 5px;
+}
+
+.b__add-input .delete-all {
+  margin-left: 5px;
 }
 
 /************* main *************/
@@ -81,5 +89,13 @@
 }
 
 .pink:hover {
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #cb0f13 !important;
+}
+
+.red:hover {
   opacity: 0.8;
 }
