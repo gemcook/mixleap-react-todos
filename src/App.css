@@ -1,0 +1,46 @@
+.a__todos {
+  padding: 10px 20px;
+}
+
+.b__title {
+  padding: 0 0 10px 0;
+}
+
+.b__main .text {
+  margin-left: 20px;
+}
+
+.b__add-input input {
+  width: 300px;
+}
+
+.b__main {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.b__main ul {
+  list-style: none;
+}
+
+.b__main ul li {
+  padding-bottom: 15px;
+}
+
+.b__main .w__text {
+  cursor: pointer;
+}
+
+.b__main .remove {
+  margin-left: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.b__main .no-message {
+  padding: 20px 40px;
+}
+
+.ui.checkbox {
+  top: 2px;
+}
