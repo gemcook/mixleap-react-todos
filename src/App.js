@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Input, Checkbox } from "semantic-ui-react";
+import { Input, Checkbox, Button } from "semantic-ui-react";
 import storage from "store";
+import classNames from "classnames";
 import "./App.css";
 
 class App extends Component {
@@ -61,6 +62,27 @@ class App extends Component {
             }}
             size="large"
           />
+          <Button
+            size="small"
+            className="delete-all"
+            color="green"
+            disabled={this.state.todos.length === 0}
+            onClick={() => {
+              const todos = this.state.todos.filter(todo => {
+                return todo.done === false;
+              });
+
+              // ローカルストレージに保存
+              storage.set("todos", todos);
+
+              // Stateに保存
+              this.setState({
+                todos
+              });
+            }}
+          >
+            完了を一括削除
+          </Button>
         </div>
         <div className="b__main">
           {this.state.todos.length === 0 ? (
@@ -94,7 +116,14 @@ class App extends Component {
                       }}
                     >
                       <Checkbox checked={todo.done} />
-                      <span className="text">{todo.text}</span>
+                      <span
+                        className={classNames({
+                          text: true,
+                          done: todo.done
+                        })}
+                      >
+                        {todo.text}
+                      </span>
                     </span>
                     <span
                       className="remove"
