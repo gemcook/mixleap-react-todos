@@ -36,7 +36,7 @@ jobs :
           command: |
             echo "${CIRCLE_BRANCH}"
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              make master
+              yarn build
             fi
       - save_cache:
           key: todos-mixlea-gemcook-{{ .Branch }}-{{ checksum "yarn.lock" }}
