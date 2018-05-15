@@ -14,13 +14,13 @@
 
 ## Copy
 
-1.  環境構築の確認する
+### 1. 環境構築の確認する
 
 ```
 node -v
 ```
 
-2.  React の開発環境を作る
+### 2. React の開発環境を作る
 
 ```
 npm install -g create-react-app
@@ -28,20 +28,20 @@ npm install -g create-react-app
 
 * [create-react-app](https://github.com/facebook/create-react-app)
 
-3.  create-react-app でプロジェクトを作成する
+### 3. create-react-app でプロジェクトを作成する
 
 ```
 create-react-app mixleap-react-todos
 ```
 
-4.  ローカルでサーバーを起動する
+### 4. ローカルでサーバーを起動する
 
 ```
 cd mixleap-react-todos
 npm start
 ```
 
-5.  必要な npm ライブラリをインストールする
+### 5. 必要な npm ライブラリをインストールする
 
 ```
 npm install -S semantic-ui-react store classnames
@@ -51,7 +51,7 @@ npm install -S semantic-ui-react store classnames
 * [store.js](https://github.com/marcuswestin/store.js)
 * [classnames](https://github.com/JedWatson/classnames)
 
-6.  SemanticCSS の CDN を読み込む
+### 6. SemanticCSS の CDN を読み込む
 
 ```
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css">
@@ -59,7 +59,7 @@ npm install -S semantic-ui-react store classnames
 
 * [semantic-ui-react](https://react.semantic-ui.com/usage)
 
-7.  Todo 用の style をコピペする
+### 7. Todo 用の style をコピペする
 
 ```scss
 .a__todos {
