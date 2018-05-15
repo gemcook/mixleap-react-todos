@@ -61,7 +61,7 @@ npm install -S semantic-ui-react store classnames
 
 7.  Todo 用の style をコピペする
 
-```
+```scss
 .a__todos {
   padding: 10px 20px;
   color: #555;
