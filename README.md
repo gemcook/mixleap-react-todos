@@ -82,48 +82,48 @@ npm install -S semantic-ui-react store classnames
 }
 
 /************* main *************/
-.b__main {
+.b__lists {
   padding: 20px 0;
   font-size: 18px;
 }
 
-.b__main .text {
+.b__lists .text {
   margin-left: 20px;
 }
 
-.b__main ul {
+.b__lists ul {
   list-style: none;
 }
 
-.b__main ul li {
+.b__lists ul li {
   padding-bottom: 15px;
 }
 
-.b__main .w__text {
+.b__lists .w__text {
   cursor: pointer;
 }
 
-.b__main .w__text .text.done {
+.b__lists .w__text .text.done {
   color: #ddd;
   text-decoration: line-through;
 }
 
-.b__main .w__text .text.done {
+.b__lists .w__text .text.done {
   color: #ddd;
   text-decoration: line-through;
 }
 
-.b__main .remove {
+.b__lists .remove {
   margin-left: 20px;
   color: #cb0f13;
   cursor: pointer;
 }
 
-.b__main .remove:hover {
+.b__lists .remove:hover {
   opacity: 0.6;
 }
 
-.b__main .no-message {
+.b__lists .no-message {
   padding: 20px 40px;
 }
 
@@ -155,6 +155,14 @@ npm install -S semantic-ui-react store classnames
 .red:hover {
   opacity: 0.8;
 }
+```
+
+### 7. Todo 用の style をコピペする
+
+```jsx
+<div className="b__title">
+  <h1>Mix Leap React Todos</h1>
+</div>
 ```
 
 ## Slide

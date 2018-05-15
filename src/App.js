@@ -84,7 +84,7 @@ class App extends Component {
             完了を一括で削除
           </Button>
         </div>
-        <div className="b__main">
+        <div className="b__lists">
           {this.state.todos.length === 0 ? (
             <p className="no-message">Todoがありません</p>
           ) : (
