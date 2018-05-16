@@ -10,26 +10,6 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      todos: [],
-      inputText: ""
-    };
-
-    this.updateTodos = this.updateTodos.bind(this);
-    this.updateInputText = this.updateInputText.bind(this);
-  }
-
-  updateTodos(todos) {
-    this.setState({
-      todos
-    });
-  }
-
-  updateInputText(value) {
-    this.setState({
-      inputText: value
-    });
   }
 
   render() {
@@ -39,15 +19,10 @@ class App extends Component {
           <Title />
         </div>
         <div className="b__add-input">
-          <InputArea
-            inputText={this.state.inputText}
-            todos={this.state.todos}
-            updateInputText={this.updateInputText}
-            updateTodos={this.updateTodos}
-          />
+          <InputArea />
         </div>
         <div className="b__lists">
-          <Lists todos={this.state.todos} updateTodos={this.updateTodos} />
+          <Lists />
         </div>
       </div>
     );
