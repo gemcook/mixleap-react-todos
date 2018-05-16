@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { Input, Checkbox, Button } from "semantic-ui-react";
-import storage from "store";
-import classNames from "classnames";
 import Title from "./Title";
 import InputArea from "./InputArea";
 import Lists from "./Lists";

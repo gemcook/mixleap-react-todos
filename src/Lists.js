@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Input, Checkbox, Button } from "semantic-ui-react";
-import storage from "store";
+import { Checkbox } from "semantic-ui-react";
 import classNames from "classnames";
 
 function Lists(props) {
