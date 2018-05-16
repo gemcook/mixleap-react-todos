@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Input, Button } from "semantic-ui-react";
-import storage from "store";
 
 function InputArea(props) {
   return (
