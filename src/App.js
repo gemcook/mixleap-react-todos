@@ -11,11 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // ローカルストレージの初期読み込み
-    const todos = storage.get("todos");
-
     this.state = {
-      todos: todos || [],
+      todos: [],
       inputText: ""
     };
 
@@ -24,9 +21,6 @@ class App extends Component {
   }
 
   updateTodos(todos) {
-    // ローカルストレージに保存
-    storage.set("todos", todos);
-
     this.setState({
       todos
     });
