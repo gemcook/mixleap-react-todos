@@ -14,6 +14,7 @@
 
 ## npm library
 
+* [react](https://reactjs.org/)
 * [semantic-ui-react](https://react.semantic-ui.com/usage)
 * [store.js](https://github.com/marcuswestin/store.js)
 * [classnames](https://github.com/JedWatson/classnames)
@@ -73,7 +74,7 @@ yarn start
 
 ##### コピペする設定ファイル
 
-````
+```
 {
    "editor.formatOnSave": true,
    "prettier.singleQuote": true,
@@ -84,19 +85,20 @@ yarn start
 
 #### Atom
 
-1. Atomの設定ページを開く (cmd + , )
-2. 「Install」で「prettier-atom」と検索
-3. インストールする
-4. 「Packages」で「prettier-atom」と検索
-5. 「Settings」を押す
-6. GitHub記載の設定に合わせる
-7. Atomを再起動する
+1.  Atom の設定ページを開く (cmd + , )
+2.  「Install」で「prettier-atom」と検索
+3.  インストールする
+4.  「Packages」で「prettier-atom」と検索
+5.  「Settings」を押す
+6.  GitHub 記載の設定に合わせる
+7.  Atom を再起動する
 
 ##### コピペする設定ファイル
 
 チェックを入れる項目
 
 * Format on Save
+
   * Format Files on Save
   * Ignore Files in `.eslintignore`
   * Show in Status Bar
@@ -107,7 +109,19 @@ yarn start
   * Trailing Comma
     * es5
 
-### 7. Todo 用の style をコピペする
+### 7. CSS 周りをコピペする
+
+#### Semantic の CDN を読み込む
+
+* /public/index.html
+
+```
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+```
+
+#### Todo 用の CSS をコピペする
+
+* /src/App.css
 
 ```scss
 .a__todos {
@@ -203,19 +217,7 @@ yarn start
 .red:hover {
   opacity: 0.8;
 }
-````
-
-### 7. Todo 用の style をコピペする
-
-```jsx
-<div className="b__title">
-  <h1>Mix Leap React Todos</h1>
-</div>
 ```
-
-## Slide
-
-* xxxxx
 
 ## License
 
