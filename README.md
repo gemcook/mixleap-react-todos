@@ -12,7 +12,13 @@
 
 * https://todos.mixleap.gemcook.com
 
-## Copy
+## npm library
+
+* [semantic-ui-react](https://react.semantic-ui.com/usage)
+* [store.js](https://github.com/marcuswestin/store.js)
+* [classnames](https://github.com/JedWatson/classnames)
+
+## Agenda
 
 ### 1. 環境構築の確認する
 
@@ -23,7 +29,7 @@ node -v
 ### 2. React の開発環境を作る
 
 ```
-npm install -g create-react-app
+npm install -g yarn create-react-app
 ```
 
 * [create-react-app](https://github.com/facebook/create-react-app)
@@ -34,30 +40,72 @@ npm install -g create-react-app
 create-react-app mixleap-react-todos
 ```
 
-### 4. ローカルでサーバーを起動する
+### 4. 必要な npm ライブラリをインストールする
 
 ```
 cd mixleap-react-todos
-npm start
 ```
 
-### 5. 必要な npm ライブラリをインストールする
-
 ```
-npm install -S semantic-ui-react store classnames
+yarn add semantic-ui-react store classnames
 ```
 
 * [semantic-ui-react](https://react.semantic-ui.com/usage)
 * [store.js](https://github.com/marcuswestin/store.js)
 * [classnames](https://github.com/JedWatson/classnames)
 
-### 6. SemanticCSS の CDN を読み込む
+### 5. ローカルでサーバーを起動する
 
 ```
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css">
+yarn start
 ```
 
-* [semantic-ui-react](https://react.semantic-ui.com/usage)
+### 6. テキストエディタでプロジェクトを開く
+
+#### VSCode
+
+1.  サイドバーのプラグインマークを押下する
+2.  「prettier」をプラグインを検索する
+3.  「Prettier - Code formatter」をインストールする
+4.  VSCode の設定ページを開く (cmd + , )
+5.  GitHub 記載の設置ファイルをコピーして、貼り付ける
+6.  VSCode を再起動する
+
+##### コピペする設定ファイル
+
+````
+{
+   "editor.formatOnSave": true,
+   "prettier.singleQuote": true,
+   "prettier.bracketSpacing": false,
+   "prettier.trailingComma": "es5",
+}
+```
+
+#### Atom
+
+1. Atomの設定ページを開く (cmd + , )
+2. 「Install」で「prettier-atom」と検索
+3. インストールする
+4. 「Packages」で「prettier-atom」と検索
+5. 「Settings」を押す
+6. GitHub記載の設定に合わせる
+7. Atomを再起動する
+
+##### コピペする設定ファイル
+
+チェックを入れる項目
+
+* Format on Save
+  * Format Files on Save
+  * Ignore Files in `.eslintignore`
+  * Show in Status Bar
+
+* Prettier Options
+  * Single Quotes
+  * Semicolons
+  * Trailing Comma
+    * es5
 
 ### 7. Todo 用の style をコピペする
 
@@ -155,7 +203,7 @@ npm install -S semantic-ui-react store classnames
 .red:hover {
   opacity: 0.8;
 }
-```
+````
 
 ### 7. Todo 用の style をコピペする
 
