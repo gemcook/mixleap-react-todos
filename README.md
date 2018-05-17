@@ -68,19 +68,18 @@ yarn start
 1.  サイドバーのプラグインマークを押下する
 2.  「prettier」をプラグインを検索する
 3.  「Prettier - Code formatter」をインストールする
-4.  VSCode の設定ページを開く (cmd + , )
-5.  GitHub 記載の設置ファイルをコピーして、貼り付ける
-6.  VSCode を再起動する
+4.  「再読み込み」ボタンを押す。
+5.  VSCode の設定ページを開く (cmd + , )
+6.  GitHub 記載の設置ファイルをコピーして、貼り付ける
+7.  VSCode を再起動する
 
-##### コピペする設定ファイル
+##### 設定ファイルに追加する設定
 
 ```
-{
    "editor.formatOnSave": true,
    "prettier.singleQuote": true,
    "prettier.bracketSpacing": false,
    "prettier.trailingComma": "es5",
-}
 ```
 
 #### Atom
