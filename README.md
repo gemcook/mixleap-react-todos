@@ -220,6 +220,10 @@ yarn start
 
 * https://qiita.com/gcnishino/items/0ce2d9bda9ee3b05845e
 
+## Slide
+
+* https://speakerdeck.com/gcfuji/20180517-osaka-mix-leap-study-number-13-reactmian-qiang-hui-hansuonbian
+
 ## License
 
 mixleap-react-todos is released under the MIT license.
