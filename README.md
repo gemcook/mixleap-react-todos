@@ -10,7 +10,7 @@
 
 ## Keynote
 
-* https://speakerdeck.com/gcfuji/reactdetodowozuo-rou
+* https://speakerdeck.com/tfrcm/reactmian-qiang-hui-hansuonbian
 
 ## Demo
 
