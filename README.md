@@ -8,6 +8,10 @@
 
 * https://yahoo-osaka.connpass.com/event/85894/
 
+## Keynote
+
+* https://speakerdeck.com/gcfuji/reactdetodowozuo-rou
+
 ## Demo
 
 * https://todos.mixleap.gemcook.com
