@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^16.3.2",
+    "classnames": "2.2.5",
+    "react": "16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
-    "semantic-ui-react": "^0.80.0",
-    "store": "^2.0.12"
+    "semantic-ui-react": "0.80.0",
+    "store": "2.0.12"
   },
   "scripts": {
     "start": "react-scripts start",
